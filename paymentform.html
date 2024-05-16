@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>PAYMENT FORM</title>
+</head>
+<body>
+    <form action="">
+        <h1>PAYMENT FORM</h1>
+        <h2>CONTACT INFORMATION</h2>
+        <p>Required field are followed by *</p>
+        <p>NAME: *<input type="text" name="NAME" required><br><br>
+        FATHER'S NAME:<input type="text" name=" Father_NAME" required>
+        <br>
+        <br>
+        <legend>GENDER</legend>
+        Female:<input type="radio" name="GENDER"id="Female">
+        Male:<input type="radio" name="GENDER"id="male">
+        Transgender:<input type="radio" name="GENDER"id="Transgender"></p>
+        <p>Address:<textarea name="address" cols="100" rows="7" id="Address"></textarea></p><!--The id attribute (id="username") provides a unique identifier for the input element.
+            The name attribute (name="username") identifies the input field when the form is submitted. The value entered by the user will be sent to the server with the key "username".--> 
+        <p>Email:*<input type ="email" name ="Email" required id="email"></p>
+        <p>Pincode<input type ="number" name ="Pincode" id="Pincode"></p>
+        <p>MOBILE NUMBER<input type ="number" name ="number" id="Mobile number"></p><!--JavaScript and CSS use the id attribute to target specific elements for manipulation or styling. If multiple elements have the same id, it can lead to unexpected behavior or errors.-->
+    <h2>PAYMENT INFORMATION</h2>
+    <p> Card types:*
+        <select name ="card_type" required id="card_type">
+        <option value="">Select a card Type</option>
+        <option value ="visa">Visa</option>
+        <option value ="rupay">Rupay</option>
+        <option value ="Phone pay">Phone pay</option>
+        <option value ="Goggle pay">Goggle pay</option>
+        </select>
+    </p> 
+    <p>Card number:*<input type ="number" required name="Card_number" id="Card_number">
+    </p>
+    <p>Card Expiration Date<input type ="date" name="exp_date" id="exp_date">
+    </p>
+    <p>CVV *<input type="password" required name="cvv" id="cvv"></p>
+    <input type="submit"Value="SUBMIT">
+
+    </form><!--Here action attribute tells the browser where to send(server) the form data once the user submits-->
+
+</body>
+</html>
